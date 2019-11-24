@@ -1,0 +1,106 @@
+#hero
+  background: #E5E4E2
+  position: relative
+
+  h1
+    color: $preto-claro
+    font-size: 4em
+    line-height: .9em
+    padding-top: 2em
+    width: 78%
+    z-index: 9999
+    margin: 0 auto
+    margin-bottom: .5em
+
+    @include breakpoint(xxlarge)
+      padding-right: 10%
+
+  p
+    margin-top: 2em
+    width: 78%
+    margin: 0 auto
+    color: $preto-claro
+    font-size: 1.2em
+
+    span
+      color: $azul
+
+  .samuel
+    max-width: 600px
+
+  .button
+    position: relative
+    height: 50px
+    background: $azul
+    border: 0px none transparent
+    font-size: 1em
+    padding: 1em
+    margin: 2em auto 3em 11%
+
+    &:after
+      position: absolute
+      top: 0
+      right: -51px
+      width: 50px
+      height: 50px
+      content: ""
+      background: $azul url(../img/arrow-button.svg)
+      background-repeat: no-repeat
+      background-position: center center
+      animation-duration: 4s
+      animation-iteration-count: infinite
+
+    &:hover
+      background: $preto-claro
+
+      &:after
+        background: $preto-claro url(../img/arrow-button.svg)
+        background-repeat: no-repeat
+        background-position: 50% 65%
+        transition: all ease-in-out .2s
+
+
+@media screen and (min-width: 40em)
+  #hero
+    height: 650px
+    position: relative
+    overflow: hidden
+
+    h1
+      color: #4A4A4A
+      font-size: 3.5em
+      line-height: .9em
+      padding-top: 2em
+      z-index: 2
+      position: relative
+
+    p
+      position: relative
+      z-index: 2
+
+    .button
+      z-index: 2
+
+    .samuel
+      max-width: 600px
+      position: absolute
+      right: -150px
+      bottom: 0px
+      z-index: 0
+
+      img
+
+        right: 300px
+
+
+@media screen and (min-width: 64em)
+  #hero
+    height: 100vh
+
+    h1
+      font-size: 5em
+      padding-top: 20%
+
+    .samuel
+      right: 0px
+      max-width: 800px

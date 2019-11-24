@@ -1,0 +1,63 @@
+#about-page
+  background-color: $azul
+
+
+  .overlay
+    background: $preto-claro
+
+  #burger
+    span
+      background: $cinza-claro
+
+  #my-story
+
+    &:after
+      background-image: url(../img/aboutme/aboutme01.png)
+      background-position: -220px 0px
+      background-repeat: no-repeat
+      background-color: $azul
+      background-blend-mode:  darken
+      background-attachment: fixed
+      background-size: 150%
+      opacity: .5
+      z-index: -1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      position: fixed
+      content: ""
+
+      @include breakpoint(large)
+        background-position: top left
+        background-size: auto
+
+    .descricao
+      margin-top: 300px
+      margin-bottom: 5em
+
+      @include breakpoint(large)
+        margin-top: 350px
+
+      h1
+        font-size: 5em
+        color: white
+        line-height: .8em
+
+      p
+        font-size: 3em
+        font-weight: bold
+        letter-spacing: -.07em
+        line-height: 1.1em
+        color: $cinza-claro
+
+        a
+          text-decoration: underline
+          color: $preto-claro
+          font-weight: bold
+
+
+  footer
+    background: white
+    width: 100%
+    float: left

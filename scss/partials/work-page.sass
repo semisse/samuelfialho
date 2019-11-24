@@ -1,0 +1,236 @@
+#work-page
+
+  #menu
+    position: fixed
+
+  #work
+    margin-top: 250px
+    z-index: 2
+
+    @include breakpoint(large)
+      margin-top: 400px
+
+    .case
+      height: 800px
+
+      .button
+        position: relative
+        height: 50px
+        width: 200px
+        background: white
+        border: 0px none transparent
+        font-size: 1em
+        font-weight: normal
+        padding: 1em
+        padding-top: 1.1em
+        color: $preto-claro
+
+        &:after
+          display: none
+
+        &:hover
+          background: $azul
+          color: white
+
+    .maria-da-nazare
+      background: url(../img/work/maria-da-nazare/maria-da-nazare-background.jpg) no-repeat
+      background-size: cover
+      position: relative
+
+
+      .cartuxo
+        background: url(../img/work/maria-da-nazare/cartuxo.png) no-repeat
+        background-size: cover
+        position: absolute
+        bottom: -210px
+        width: 300px
+        height: 300px
+
+        @include breakpoint(medium)
+          width: 450px
+          height: 650px
+
+    .castelo-de-leiria
+      .aplicacao
+        @include breakpoint(small)
+          bottom: -190px
+
+        @include breakpoint(large)
+          bottom: -790px
+
+    .betarena
+      background: #da3f32
+      position: relative
+
+      .imagens
+        position: relative
+        height: 100%
+
+        div
+          position: absolute
+          width: 50%
+
+          &:first-child
+            top: 0%
+
+            @include breakpoint(large)
+              top: 10%
+
+          &:nth-child(2)
+            top: 0%
+            left: 50%
+            margin-left: -25%
+
+            @include breakpoint(large)
+              top: 50%
+              margin-top: -15%
+              left: 50%
+              margin-left: -25%
+
+          &:last-child
+            top: 0
+            right: 0
+
+            @include breakpoint(large)
+              top: auto
+              bottom: 10%
+              right: 0
+
+    .atlantico
+      background: #1d305a
+      position: relative
+      overflow: hidden
+      height: 900px
+
+      .imagens
+
+        div
+          position: absolute
+
+        .atlantico01
+          bottom: 0
+
+          @include breakpoint(large)
+            top: -50px
+
+          img
+            width: 80%
+
+        .atlantico02
+          bottom: -150px
+
+          @include breakpoint(large)
+            top: 40%
+
+          img
+            width: 70%
+            @include breakpoint(large)
+              width: 80%
+
+        .atlantico03
+          display: none
+
+          @include breakpoint(large)
+            display: block
+            bottom: -800px
+            right: 80px
+          img
+            width: 70%
+
+    .bloom
+      background: url(../img/work/bloom/background.jpg) no-repeat
+      background-size: cover
+      background-position: center
+      background-attachment: fixed
+      z-index: 4
+
+      @include breakpoint(large)
+        background-position: left
+
+    .space
+      background-image: linear-gradient(-90deg, #86C5B9 0%, #86C8EE 100%)
+
+      .imagens
+        position: relative
+
+        .space-tras
+          position: absolute
+          top: -150px
+          right: 0px
+          display: none
+          @include breakpoint(large)
+            display: block
+
+          img
+            width: 70%
+
+        .space-meio
+          position: absolute
+          left: 25%
+          top: 200px
+
+          @include breakpoint(large)
+            left: 0
+            top: 200px
+
+          img
+            width: 70%
+
+        .space-frente
+          position: absolute
+          bottom: -1600px
+          right: 0px
+          display: none
+          @include breakpoint(large)
+            display: block
+
+          img
+            width: 90%
+
+    .al
+      background: #222322
+
+      .imagens
+        position: relative
+
+        .arrow
+          @include breakpoint(small)
+            position: relative
+            width: 70%
+            margin: 0 auto
+
+          .arrow-image
+            transition-duration: .8s
+            transition-property: transform
+
+            &:hover
+              transform: rotate(360deg)
+
+        .dynamics
+          position: absolute
+          top: 0
+          right: -60px
+          width: 70%
+
+          @include breakpoint(large)
+            right: -100px
+            width: 70%
+
+        .drupal
+          position: absolute
+          bottom: -20px
+          left: -20px
+          width: 50%
+
+          @include breakpoint(large)
+            bottom: -50px
+            left: 0
+
+    .cibv
+      height: 950px
+
+    .northspot
+      height: 1200px
+
+    .cmnazare
+      height: 1000px

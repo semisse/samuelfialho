@@ -1,0 +1,276 @@
+#work
+  position: relative
+
+
+  .case
+    padding: 2em
+    position: relative
+
+    .button
+      position: relative
+      height: 50px
+      width: 200px
+      background: white
+      border: 0px none transparent
+      font-size: 1em
+      font-weight: normal
+      padding: 1em
+      padding-top: 1.1em
+      color: $preto-claro
+
+      &:after
+        display: none
+
+      &:hover
+        background: $azul
+        color: white
+
+    @include breakpoint(medium)
+      height: 80vh
+
+    h2, p
+      color: white
+
+    h2
+      font-size: 2.5em
+      line-height: 1em
+      font-weight: 800
+      letter-spacing: -.05em
+
+      @include breakpoint(medium)
+        font-size: 3em
+
+      @include breakpoint(xxlarge)
+        font-size: 4em
+
+    p
+      font-size: 1.1em
+
+      @include breakpoint(medium)
+        font-size: 1.3em
+
+    .funcoes
+      margin: 2em 0
+      span
+        margin-right: .2em
+        margin-bottom: .4em
+        padding: .7em 1em
+        border-radius: 10px
+        background: $cinza-claro
+        display: inline-block
+        font-size: .8em
+
+      .not-available
+        background: transparent
+        border: $cinza-claro 1px solid
+        color: $cinza-claro
+
+    .imagens
+      margin-top: 2em
+
+    .texto
+      padding: 0em
+
+      @include breakpoint(large)
+        padding: 0 8% 0 8%
+
+      @include breakpoint(xlarge)
+        padding: 0 8% 0 8%
+
+      @include breakpoint(xxlarge)
+        padding: 0 12% 0 12%
+
+
+  .cibv
+    height: 900px
+    background: url(../img/work/cibv/grass.jpg) no-repeat fixed
+    background-size: cover
+
+    .imagens
+      margin-top: 0
+
+
+
+  .castelo-de-leiria
+    background: #e54b4b
+    height: 900px
+    overflow: hidden
+
+    @include breakpoint(large)
+      height: 800px
+
+    .imagens
+      position: relative
+      width: 320px
+      height: 500px
+      display: block
+
+      .fotografia
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+      .castelo
+        background: url(../img/work/castelo-leiria/castelo.jpg) no-repeat center center
+        background-size: 100%
+        width: 320px
+        height: 200px
+        display: block
+        z-index: 1
+
+        @include breakpoint(medium)
+          width: 500px
+          height: 500px
+          background-size: cover
+
+        @include breakpoint(xlarge)
+          width: 650px
+          height: 400px
+
+        @include breakpoint(xxlarge)
+          width: 800px
+
+
+      .aplicacao
+        background: url(../img/work/castelo-leiria/mao.png) no-repeat
+        background-size: 100%
+        background-position: center center
+        position: absolute
+        bottom: -10px
+        width: 400px
+        height: 400px
+        z-index: 3
+
+        @include breakpoint(medium)
+          bottom: 0px
+          top: auto
+          bottom: -300px
+          width: 550px
+          height: 550px
+
+        @include breakpoint(large)
+          width: 600px
+          height: 600px
+          top: auto
+          bottom: -290px
+          right: -50px
+
+        @include breakpoint(xlarge)
+          width: 600px
+          height: 600px
+          top: auto
+          bottom: -290px
+          right: -50px
+
+
+        @include breakpoint(xxlarge)
+          width: 800px
+          height: 800px
+          top: auto
+          bottom: -290px
+          right: -50px
+
+
+  .northspot
+    background: #e8d87a
+    height: 1100px
+    overflow: hidden
+    @include breakpoint(large)
+      height: 900px
+
+    .imagens
+      position: relative
+      width: 100%
+      height: 300px
+      margin-top: 6em
+
+
+      .northspot01
+        position: absolute
+        width: 430px
+        bottom: -20px
+        right: -40px
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        border-radius: 5px
+
+      .northspot02
+        position: absolute
+        width: 600px
+        top: 10px
+        left: -5px
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        border-radius: 5px
+
+      .northspot03
+        position: absolute
+        bottom: 200px
+        right: -25px
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        border-radius: 5px
+
+  .cmnazare
+    background: #293571
+    height: 900px
+
+    .imagens
+      position: relative
+
+      .cmnazare01
+        width: 500px
+
+        @include breakpoint(large)
+          width: 800px
+          margin-top: 5em
+
+  .button
+    width: 100%
+    height: 100px
+    background: $azul
+    font-size: 2.5em
+    text-transform: uppercase
+    font-weight: 700
+    margin: 0
+
+    @include breakpoint(large)
+      height: 200px
+      font-size: 4.5em
+
+    &:after
+      position: absolute
+      bottom: -2px
+      right: 20px
+      height: 100px
+      width: 100px
+      content: ""
+      background: url(../img/arrow-button.svg) no-repeat center center
+      background-size: 40px 40px
+      transform: rotate(-90deg)
+
+      @include breakpoint(large)
+        bottom: 50px
+        background-size: 80px 80px
+
+    &:hover
+      background: $preto-claro
+
+      &:after
+        right: 10px
+
+
+
+@media screen and (min-width: 40em)
+  #work
+
+    .northspot
+      .imagens
+        margin-top: 0
+        height: 100%
+        width: 50%
+
+
+        .northspot01
+          top: 3em
+
+        .northspot02
+          top: 10em
+
+        .northspot03
+          top: 20em

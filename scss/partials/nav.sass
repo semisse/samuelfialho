@@ -1,0 +1,220 @@
+#menu
+  position: absolute
+  right: 2em
+  top: 2em
+  display: block
+  z-index: 1
+
+#burger
+  width: 50px
+  height: 30px
+  position: relative
+  cursor: hand
+
+  span
+    background: #18151D
+    width: 50px
+    height: 1px
+    display: block
+    position: absolute
+
+  span:first-child
+    top: 0px
+
+  span:nth-child(2)
+    top: 7px
+
+  span:nth-child(3)
+    top: 14px
+
+
+.overlay
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 4
+  left: 0
+  top: 0
+  background-color: $azul
+  overflow-x: hidden
+  transition: 0.5s
+
+.contactos
+  margin-top: 3em
+
+
+.overlay
+  padding-top: 3em
+
+  @include breakpoint(large)
+    padding-top: 0em
+
+  .fullWidth
+    height: 100%
+
+  .navigation
+
+    @include breakpoint(large)
+      padding-top: 8%
+
+    @include breakpoint(xlarge)
+      padding-top: 0%
+
+    a
+      text-decoration: none
+      font-size: 4em
+      color: white
+      display: block
+      transition: 0.3s
+      text-transform: uppercase
+      font-family: "nimbus-sans"
+      letter-spacing: -0.06em
+      text-align: left
+      height: 1em
+
+      @include breakpoint(large)
+        font-size: 8em
+        text-indent: 0
+
+      @include breakpoint(xlarge)
+        font-size: 10em
+        text-indent: .5em
+
+
+      &:hover, &:focus
+        color: $preto-claro
+
+    .selected
+      font-weight: 900
+      letter-spacing: -0.07em
+      color: $preto
+
+  .contactos
+
+    a
+      font-family: "freight-text-pro", serif
+      font-size: 1.2em
+      text-transform: none
+      letter-spacing: normal
+      text-align: left
+      width: 100%
+      display: block
+      height: auto
+      color: white
+      transition: 0.3s
+
+      @include breakpoint(large)
+        font-size: 1.5em
+
+      @include breakpoint(xlarge)
+        font-size: 3em
+
+      &:hover
+        color: $preto-claro
+
+    .redes-sociais
+      margin: 0 auto
+      margin-top: 2em
+
+      span
+        display: inline-block
+        margin: .5em
+
+        a
+          &:hover
+            color: $preto
+
+
+  #close
+    width: 50px
+    height: 50px
+    position: absolute
+    top: 2em
+    right: 2em
+    display: block
+    z-index: 3
+
+
+
+  .closebtn
+    width: 50px
+    height: 50px
+    position: absolute
+    right: 0
+    display: block
+
+    &:before, &:after
+      position: absolute
+      top: -8px
+      right: 24px
+      content: ' '
+      height: 66px
+      width: 1px
+      background: white
+
+    &:before
+      transform: rotate(45deg)
+
+    &:after
+      transform: rotate(-45deg)
+
+
+
+
+@media screen and (max-height: 450px)
+  .overlay
+    a
+      font-size: 20px
+    .closebtn
+      font-size: 40px
+      top: 15px
+      right: 35px
+
+
+
+// @media screen and (min-width: 40em)
+//   .overlay
+//     padding: 0
+//
+//     a
+//       font-size: 5em
+//       text-indent: 0em
+//
+//     .contactos
+//       padding-right: 2em
+//       padding-top: 3em
+//
+//       a
+//         font-size: 2em
+//
+//
+// @media screen and (min-width: 64em)
+//
+//   .overlay
+//     padding-top: 10em
+//
+//     a
+//       font-size: 5em
+//       text-indent: 1em
+//
+//     .contactos
+//       margin-top: 3em
+//       text-align: right
+//
+//       a
+//         text-align: right
+//
+// @media only screen and (min-width: 90.063em)
+//   .overlay
+//     padding-top: 10em
+//
+//     a
+//       font-size: 10em
+//       text-indent: 1em
+//
+//     .contactos
+//       margin-top: 3em
+//       text-align: right
+//
+//       a
+//         text-align: right
